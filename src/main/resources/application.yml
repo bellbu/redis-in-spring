@@ -26,6 +26,10 @@ spring:
     activate:
       on-profile: prod #원격 환경
   datasource:
-    url: jdbc:mysql://instagram-db.cvqk8wwquqiy.ap-northeast-2.rds.amazonaws.com:3306/mydb  #AWS RDS 데이터 베이스 사용
+    url: jdbc:mysql://instagram-db.cvqk8wwquqiy.ap-northeast-2.rds.amazonaws.com:3306/mydb  #AWS RDS 사용
     username: admin
     password: password
+  data:
+    redis:
+      host: instagram-cache-server.vzvxyg.ng.0001.apn2.cache.amazonaws.com
+      port: 6379
